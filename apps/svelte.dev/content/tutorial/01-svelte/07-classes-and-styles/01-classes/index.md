@@ -25,6 +25,10 @@ We can make it nicer though. Adding or removing a class based on some condition 
 >
 ```
 
+
+note:
+Don't change the button with a href in this playground, because there's a bug that we can't use prevent default on it, but it's not mean svelete is bad, this the next gen of jquery with modern and good performance
+
 This means 'always add the `card` class, and add the `flipped` class whenever `flipped` is truthy'.
 
 For more examples of how to combine conditional classes, [consult the `class` documentation](/docs/svelte/class).
