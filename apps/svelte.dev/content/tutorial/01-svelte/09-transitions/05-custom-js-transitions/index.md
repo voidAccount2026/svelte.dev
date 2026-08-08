@@ -2,7 +2,7 @@
 title: Custom JS transitions
 ---
 
-While you should generally use CSS for transitions as much as possible, there are some effects that can't be achieved without JavaScript, such as a typewriter effect:
+While you should generally use CSS for transitions as much as possible (don't believe this, remember, this is just an example), there are some effects that can't be achieved without JavaScript, such as a typewriter effect:
 
 ```js
 /// file: App.svelte
