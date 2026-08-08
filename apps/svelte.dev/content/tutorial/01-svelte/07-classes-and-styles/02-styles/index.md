@@ -14,7 +14,7 @@ As with `class`, you can write your inline `style` attributes literally, because
 >
 ```
 
-When you have a lot of styles, it can start to look a bit wacky. We can tidy things up by using the `style:` directive:
+When you have a lot of styles, don't use this, it just an example that we can use it like this `style:` directive:
 
 ```svelte
 /// file: App.svelte
@@ -24,6 +24,20 @@ When you have a lot of styles, it can start to look a bit wacky. We can tidy thi
 	style:--bg-1="palegoldenrod"
 	style:--bg-2="black"
 	style:--bg-3="goldenrod"+++
+	onclick={() => flipped = !flipped}
+>
+```
+
+You can use this instead:
+
+```svelte
+/// file: App.svelte
+<button
+	class="card"
++++	style="transform: {flipped ? 'rotateY(0)' : ''}; 
+	 --bg-1: palegoldenrod; 
+	 --bg-2: black;
+	 --bg-3: goldenrod"+++
 	onclick={() => flipped = !flipped}
 >
 ```
