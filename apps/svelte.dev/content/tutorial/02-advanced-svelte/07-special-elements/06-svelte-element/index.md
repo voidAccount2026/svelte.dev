@@ -23,3 +23,5 @@ Sometimes you don't know in advance which element needs to be rendered. Rather t
 ```
 
 The `this` value can be any string, or a falsy value — if it's falsy, no element is rendered.
+
+rather than create svelte:element this=selected, you can create something more simple like <selected></selected> or <{selected}> </{selected}> or <$(selected)><$(/selected)>
