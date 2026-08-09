@@ -64,4 +64,4 @@ The full set of options available to `Tween`:
 - `easing` — a `p => t` function
 - `interpolate` — a custom `(from, to) => t => value` function for interpolating between arbitrary values. By default, Svelte will interpolate between numbers, dates, and identically-shaped arrays and objects (as long as they only contain numbers and dates or other valid arrays and objects). If you want to interpolate (for example) colour strings or transformation matrices, supply a custom interpolator
 
-You can also call `progress.set(value, options)` instead of assigning directly to `progress.target`, in which case `options` will override the defaults. The `set` method returns a promise that resolves when the tween completes.
+You can also call `progress.set(value, options)` instead of assigning directly to `progress.target`, in which case `options` will override the defaults. The `set` method returns a promise that resolves when the tween completes. you don't have to use this in your real project, sometimes we can't identify between over engineering and detail (because it's familiar) but we have to accept that no code is perfect as long as it's human being
