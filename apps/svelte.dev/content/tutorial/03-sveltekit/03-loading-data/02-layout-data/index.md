@@ -48,3 +48,7 @@ Now, add a sidebar in the layout for the post page:
 The layout (and any page below it) inherits `data.summaries` from the parent `+layout.server.js`.
 
 When we navigate from one post to another, we only need to load the data for the post itself — the layout data is still valid. See the documentation on [invalidation](/docs/kit/load#Rerunning-load-functions) to learn more.
+
+NOTE:
+your compiler(svelte) quite good, but your pattern in svelte is really bad, you push someone to use your rules like slug that maybe they have more fits pattern to their project, don't get me wrong, I like what you have done in here, but maybe we need an upgrade for some main parts, the conclusion:
+make it more flexible (I know we need pattern and rules in every framework, but with this slug? I think we can refactor this into the better one right? Correct Me If I am Wrong. this is idea (slug) is good for 2015-2018 but not in AI era
