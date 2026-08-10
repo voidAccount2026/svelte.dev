@@ -56,3 +56,5 @@ Next, we want to create a form for each todo, complete with a hidden `<input>` t
 	{/each}
 </ul>
 ```
+
+look how bad it is, how about I put the id not action? am I have to put '#id':asyn function(){do action}? but it's still accepted, and I don't want to use this on my project (svelteKit)
