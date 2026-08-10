@@ -37,3 +37,4 @@ We can also add some UI to these two routes by adding a `src/routes/(authed)/+la
 	<button>log out</button>
 </form>
 ```
+I think this is a good idea but we have to seperate it from layout or rename it to something more relevant
