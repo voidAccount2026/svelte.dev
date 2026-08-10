@@ -19,6 +19,8 @@ Import the `enhance` function from `$app/forms`...
 
 ...and add the `use:enhance` directive to the `<form>` elements:
 
+we can create this way more natural
+
 ```svelte
 /// file: src/routes/+page.svelte
 <form method="POST" action="?/create" +++use:enhance+++>
