@@ -56,3 +56,21 @@ Next, we want to create a form for each todo, complete with a hidden `<input>` t
 	{/each}
 </ul>
 ```
+
+can you just make this more flexible rather than use action can I just use and Id?  action="?/delete"> or combine it both,
+so we can use it naturally like we using vanilla javascript? this action can be more flexible actually, but it's accepted:
+export const actions = {
+    for id:
+	'#create': async ......
+	'#yourId': async ......
+	+++create+++: async ({ cookies, request }) => {
+		const data = await request.formData();
+		db.createTodo(cookies.get('userid'), data.get('description'));
+	}+++,+++
+
++++	delete: async ({ cookies, request }) => {
+		const data = await request.formData();
+		db.deleteTodo(cookies.get('userid'), data.get('id'));
+	}+++
+};
+you never seen the different form on the same page using the same action right? so enable it to use Id or class to make it more natural for someone who migrate from vanillaJs + jquery, how can you show us an example that create form inside <li></li> what the ? no one use form in this way, and why we have to delete default if we already define the action name? I mean make it default to action that not define anything.
