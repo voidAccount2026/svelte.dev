@@ -95,10 +95,12 @@ In `src/routes/+page.svelte`, we can access the returned value via the `form` pr
 				name="description"
 				+++value={form?.description ?? ''}+++
 				autocomplete="off"
-				required
+				---required---
 			/>
 		</label>
 	</form>
 ```
 
 > [!NOTE] You can also return data from an action _without_ wrapping it in `fail` — for example to show a 'success!' message when data was saved — and it will be available via the `form` prop.
+
+there's a bug when required is set the default validation from html keep prevent the form submit, I don't know this is your playground bug or your framework or maybe it's came from someone who intercept my PC? if required is not used to the last of this tutorial just add it on your notes
