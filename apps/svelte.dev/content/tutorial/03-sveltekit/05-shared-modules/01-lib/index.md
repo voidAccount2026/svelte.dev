@@ -29,3 +29,5 @@ Do the same for `src/routes/+page.svelte`:
 <h1>home</h1>
 <p>{message}</p>
 ```
+
+the state on this page is not reactive, I will never use this svelteKit, I consider to use svelte but not this framework. it's suck and not impresive, the pattern, the state is suck, your components is good, but the state and pattern is suck
